@@ -1,5 +1,7 @@
 import React from "react"
 
+import {Link} from "react-router-dom"
+
 function Home() {
     return(
         <>
@@ -43,7 +45,7 @@ function Home() {
                 </div> 
             </div> 
 
-            <a href="#work" className="btn">My work</a>
+            <Link to="/mywork" className="btn">My work</Link>
          </section>
 
          <section class="about-me" id="about">

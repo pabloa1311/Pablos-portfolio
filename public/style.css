@@ -463,3 +463,7 @@ header {
 .social-list__link {
     padding: .5em;
 }
+
+Link {
+    text-decoration: none;
+}

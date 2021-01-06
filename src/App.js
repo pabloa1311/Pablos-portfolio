@@ -3,6 +3,7 @@ import Header from "./components/Header.js"
 import Home from "../src/pages/Home"
 import Footer from "../src/components/Footer"
 import MyWork from "../src/pages/MyWork"
+import MyWorkDetails from "../src/pages/MyWorkDetails"
 
 
 import {
@@ -14,16 +15,17 @@ function App() {
   return (
       <div>
           <Header />
-          <Home />
-          <MyWork />
-          {/* <Switch>
+          <Switch>
               <Route exact path="/">
-                  <Photos />
+                <Home />
               </Route>
-              <Route path="/cart">
-                  <Cart />
+              <Route path="/mywork">
+                <MyWork />  
               </Route>
-          </Switch> */}
+              <Route path="/mywork/:myworkId">
+                <MyWorkDetails />
+              </Route>
+          </Switch>
           <Footer />
           
       </div>

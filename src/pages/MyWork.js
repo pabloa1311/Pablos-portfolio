@@ -1,13 +1,18 @@
 import React from "react"
 import portfolioData from "../portfolioData"
+import {Link} from "react-router-dom"
 
 
 function MyWork() {
     const portfolioImages = portfolioData.map(image => {
         return (
-            <a href="portfolio-item.html" className="portfolio__item">
-                <img src={image.url} alt="hola" className="portfolio__img"/>
-            </a>         
+            <div>
+                <Link to={`/mywork/${image.id}`}>
+                    <a href="portfolio-item.html" className="portfolio__item">
+                        <img src={image.url} alt="hola" className="portfolio__img"/>
+                    </a> 
+                </Link>   
+            </div>     
         )
     })
      
