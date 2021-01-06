@@ -1,17 +1,3 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-
-import {BrowserRouter as Router} from "react-router-dom"
-
-
-ReactDOM.render(
-  <Router>
-    <App />
-  </Router>,
-  document.getElementById('root')
-);
-
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelectorAll('.nav__link')
 
@@ -24,4 +10,3 @@ navLinks.forEach(link => {
         document.body.classList.remove('nav-open');
     })
 })
-
