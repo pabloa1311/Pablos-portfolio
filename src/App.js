@@ -19,7 +19,7 @@ function App() {
               <Route exact path="/">
                 <Home />
               </Route>
-              <Route path="/mywork">
+              <Route exact path="/mywork">
                 <MyWork />  
               </Route>
               <Route path="/mywork/:myworkId">
