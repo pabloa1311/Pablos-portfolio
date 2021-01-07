@@ -48,16 +48,16 @@ function Home() {
             <Link to="/mywork" className="btn">My work</Link>
          </section>
 
-         <section class="about-me" id="about">
-            <h2 class="section__title section__title--about">Who I am</h2>
-            <p class="section__subtitle section__subtitle--about">Designer & developer based out of Colombia</p>
+         <section className="about-me" id="about">
+            <h2 className="section__title section__title--about">Who I am</h2>
+            <p className="section__subtitle section__subtitle--about">Designer & developer based out of Colombia</p>
             
-            <div class="about-me__body">
+            <div className="about-me__body">
                 <p>I am a Frontend React Developer. I currently live in Colombia, but I am completely open to relocate if necessary. I have a bachelor´s degree in civil engineering, but I am passionate about programming and that led me to study through online courses to become a web developer.</p>
                 <p>Some of my hobbies are reading, watching series and movies, playing video games and playing soccer. I am curious to learn Javascript in depth and for new software development technologies like React.js.</p>
             </div>
             
-            <img src="images/aboutMe.jpg" alt="Maria and Pablo" class="about-me__img" />
+            <img src="images/aboutMe.jpg" alt="Maria and Pablo" className="about-me__img" />
          </section>
         </>
     )

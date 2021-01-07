@@ -6,7 +6,7 @@ import {Link} from "react-router-dom"
 function MyWork() {
     const portfolioImages = portfolioData.map(image => {
         return (
-            <div>
+            <div key={image.id}>
                 <Link to={`/mywork/${image.id}`}>
                     <a href="portfolio-item.html" className="portfolio__item">
                         <img src={image.url} alt="hola" className="portfolio__img"/>
